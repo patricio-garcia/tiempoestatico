@@ -11,16 +11,21 @@ import cl.desafiolatam.tiempoestatico.model.DailyWeather;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
+    DailyWeather dwTiempo;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        DailyWeather dwTiempo = new DailyWeather("Santiago", "24-11-2020", 1, "24º", "C");
+        initData();
+        initView();
+    }
+
+    private void initData() {
+        dwTiempo = new DailyWeather("Santiago", "24-11-2020", 1, "24º", "C");
+    }
+
+    private void initView() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         binding.setTiempo(dwTiempo);
-
-
-
     }
 }

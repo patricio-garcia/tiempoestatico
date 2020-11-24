@@ -7,6 +7,10 @@
         <variable
             name="tiempo"
             type="cl.desafiolatam.tiempoestatico.model.DailyWeather" />
+
+        <variable
+            name="imagen"
+            type="android.graphics.drawable.Drawable" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
