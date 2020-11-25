@@ -7,10 +7,6 @@
         <variable
             name="tiempo"
             type="cl.desafiolatam.tiempoestatico.model.DailyWeather" />
-
-        <variable
-            name="imagen"
-            type="android.graphics.drawable.Drawable" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -49,7 +45,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvFecha"
-            app:srcCompat="@drawable/ic_dom" />
+            app:imageResource="@{tiempo.imgSun}" />
 
         <TextView
             android:id="@+id/tvTemperatura"

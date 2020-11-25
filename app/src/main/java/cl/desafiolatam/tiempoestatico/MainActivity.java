@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        dwTiempo = new DailyWeather("Santiago", "24-11-2020", 1, "24º", "C");
+        dwTiempo = new DailyWeather("Santiago", "24-11-2020", R.drawable.ic_dom, "24º", "C");
     }
 
     private void initView() {
